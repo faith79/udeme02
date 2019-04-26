@@ -17,8 +17,10 @@ npm install -g webpack webpack-dev-server
 npm init
 npm install --save react react-dom
 npm install --save redux
-npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react 
+npm install --save-dev babel-core babel-loader@7 babel-preset-es2015 babel-preset-react 
 npm install --save-dev react-hot-loader webpack webpack-dev-server
+npm install --save-dev webpack-cli
+npm install --save react-redux
 Global Dependency 설치
 npm install -g babel-cli nodemon cross-env
 Local Dependency 설치
