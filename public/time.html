@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">      
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+          
+        var d = new Date();
+        var mth = d.getMonth() + 1;
+        var dth =  d.getDate();
+        var hth = d.getHours();
+        var mith = d.getMinutes();
+        mth = (mth<10) ? "0" + mth : mth;
+        dth = (dth<10) ? "0" + dth : dth;
+        hth = (hth<10) ? "0" + hth : hth;
+        mith = (mith<10) ? "0" + mith : mith;        
+        $("#container").html(mth + "-" + dth + "-" + hth + "-" + mith);
+      });     
+      </script>
+    </head>
+   <body>
+      <div class="container" id="container"></div>
+   </body>
+ 
+</html>
